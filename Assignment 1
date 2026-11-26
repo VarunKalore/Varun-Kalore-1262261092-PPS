@@ -1,0 +1,39 @@
+Algorithm:
+
+Step 1: Start
+Step 2: Open a web browser
+Step 3: Go to www.gmail.com
+Step 4: Enter the email ID and click "Next"
+Step 5: If the email ID is invalid, display "Couldn't find your Google Account" and go to Step 4
+Step 6: Enter the password and click "Next"
+Step 7: If the password is wrong, display "Wrong password" and go to Step 6
+Step 8: If 2-step verification is on, enter the OTP / approve on phone
+Step 9: If the OTP is wrong, display "Wrong code" and go to Step 8
+Step 10: Display the Gmail inbox (login successful)
+Step 11: Stop
+
+Flowchart:
+
+[Oval] Start
+   ↓
+[Rectangle] Open web browser
+   ↓
+[Rectangle] Go to www.gmail.com
+   ↓
+[Parallelogram] Enter email ID, click Next   <──────────┐
+   ↓                                                    │
+[Diamond] Is email ID valid? ── No → [Parallelogram] Display "Account not found" ─┘
+   ↓ Yes
+[Parallelogram] Enter password, click Next   <──────────┐
+   ↓                                                    │
+[Diamond] Is password correct? ── No → [Parallelogram] Display "Wrong password" ──┘
+   ↓ Yes
+[Diamond] Is 2-step verification ON? ── No ──────────────┐
+   ↓ Yes                                                 │
+[Parallelogram] Enter OTP   <────────────┐               │
+   ↓                                     │               │
+[Diamond] Is OTP correct? ── No ─────────┘               │
+   ↓ Yes                                                 │
+[Parallelogram] Display Gmail Inbox  <───────────────────┘
+   ↓
+[Oval] Stop
